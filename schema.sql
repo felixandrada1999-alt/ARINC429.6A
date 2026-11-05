@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS ARINC429_6A
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE ARINC429_6A;
+
+CREATE TABLE IF NOT EXISTS instrumentos (
+    ins_id INT NOT NULL AUTO_INCREMENT,
+    ins_descripcion VARCHAR(50) NOT NULL,
+    PRIMARY KEY (ins_id)
+);
